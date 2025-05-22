@@ -38,24 +38,30 @@ class SignupOptionsScreen extends StatelessWidget {
                       _buildSignupButton(
                         icon: Icons.apple,
                         text: "Sign up with Apple",
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/home'); // dev shortcut
+                        },
                       ),
                       const SizedBox(height: 16),
                       _buildSignupButton(
                         icon: Icons.g_mobiledata,
                         text: "Sign up with Google",
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/home'); // dev shortcut
+                        },
                       ),
                       const SizedBox(height: 16),
                       _buildSignupButton(
                         icon: Icons.email,
                         text: "Sign up with Email",
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/signup-email');
+                        },
                       ),
                       const SizedBox(height: 24),
                       TextButton(
                         onPressed: () {
-                          // Navigate to Login Screen
+                          Navigator.pushNamed(context, '/login');
                         },
                         child: const Text(
                           "Login Existing User?",
