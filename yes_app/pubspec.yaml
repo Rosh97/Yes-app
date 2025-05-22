@@ -39,6 +39,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  image_picker: ^1.0.4
+  mapbox_gl:
+    git:
+      url: https://github.com/tobrun/flutter-mapbox-gl.git
+      ref: master
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

@@ -19,7 +19,7 @@ class _IntroScreenState extends State<IntroScreen> {
   }
 
   void _navigateToSignup() async {
-    await Future.delayed(const Duration(seconds: 5)); // wait 3 seconds
+    await Future.delayed(const Duration(seconds: 5));
     if (!mounted) return;
     Navigator.pushReplacement(
       context,
@@ -31,15 +31,17 @@ class _IntroScreenState extends State<IntroScreen> {
   Widget build(BuildContext context) {
     return AnimatedGradientBackground(
       child: Scaffold(
-        backgroundColor: Colors.transparent,
-        body: Center(
-          child: Text(
-            'YES',
-            style: GoogleFonts.hanaleiFill(
-              fontSize: 78,
-              fontWeight: FontWeight.bold,
-              color: Colors.black,
-              letterSpacing: 4,
+        backgroundColor: Colors.transparent, // Gradient shows through
+        body: SafeArea(
+          child: Center(
+            child: Text(
+              'YES',
+              style: GoogleFonts.hanaleiFill(
+                fontSize: 78,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+                letterSpacing: 4,
+              ),
             ),
           ),
         ),
